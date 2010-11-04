@@ -1,11 +1,16 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+#gem 'rails', '3.0.0'
 
 # Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '3-0-stable'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
+
+gem 'nifty-generators'
+gem 'haml'
+gem 'haml-rails'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -28,3 +33,4 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "mocha", :group => :test
